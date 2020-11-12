@@ -1,0 +1,64 @@
+@import "../../../assets/styles/index.scss";
+
+.navbar {
+
+  @include width(100%);
+  @include border(1px,solid, red);
+
+  @include flexProps(space-around,center)
+}
+
+.navbar,.navbar-menu-list,.navbar-icons{
+  @include display(flex);
+}
+
+.navbar {
+  width: 90%;
+  margin: 0 auto;
+  &-menu,&-icons,&-logo {
+
+  }
+
+  &-logo {
+    @extend .flex-1;
+    //@include border(1px,solid, blue);
+    @include padding-margin(15px, 0);
+  }
+
+  &-menu {
+    @extend .flex-3;
+    @include border(1px,solid, green);
+    @include display(flex);
+    @include flexProps(space-around,center);
+  }
+
+  &-icons {
+    @extend .flex-2;
+    @include border(1px,solid, yellow);
+
+  }
+}
+
+
+.navbar-menu-list{
+  @include flexProps(auto, center);
+  &-item {
+    list-style: none;
+    @include padding-margin(8px,0);
+  }
+}
+
+.navbar-logo > a {
+  
+  @include font-weight(800);
+  text-transform: uppercase;
+}
+
+.navbar-icons {
+  @include display(flex);
+  @include flexProps(flex-end,center);
+  &-list {
+    @include display(flex);
+    @include padding-margin(10px,0);
+  }
+}

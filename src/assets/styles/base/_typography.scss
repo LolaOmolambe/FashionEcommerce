@@ -1,0 +1,17 @@
+@import '../abstract/variable';
+@import '../abstract/responsive';
+
+h1{
+  font-size: 1.2rem;
+
+
+  @include mobile-phones{
+     font-size: .9rem;
+  }
+
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+}

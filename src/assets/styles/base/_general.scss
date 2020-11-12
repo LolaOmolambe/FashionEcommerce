@@ -1,0 +1,13 @@
+@import '../abstract/responsive';
+@import '../abstract/variable';
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  font-size: 12px;
+  background-color: #fff;
+  font-family: $lato-font;
+}

@@ -1,0 +1,22 @@
+
+//for mobile phones
+@mixin mobile-phones {
+  @media screen and (max-width:800px){
+    @content;
+  }
+}
+
+//for landscape
+
+@mixin  landscape-for-tablets {
+   @media screen and (min-width:900px) {
+     @content;
+   }
+}
+
+@mixin  landscape-for-tablets {
+  @media screen and (orientation:landscape) {
+    @content;
+
+  }
+}
